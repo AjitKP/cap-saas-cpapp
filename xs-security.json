@@ -1,6 +1,4 @@
 {
-    "xsappname": "cpapp",
-    "tenant-mode": "dedicated",
     "scopes": [
         {
             "name": "$XSAPPNAME.RiskViewer",
@@ -9,6 +7,15 @@
         {
             "name": "$XSAPPNAME.RiskManager",
             "description": "RiskManager"
+        },
+        {
+            "name": "$XSAPPNAME.mtcallback",
+            "description": "Subscription via SaaS Registry",
+            "grant-as-authority-to-apps": ["$XSAPPNAME(application,sap-provisioning,tenant-onboarding)"]
+        },
+        {
+            "name": "$XSAPPNAME.cds.Subscriber",
+            "description": "Subscribe to applications"
         }
     ],
     "attributes": [],
@@ -29,5 +36,6 @@
     "oauth2-configuration": {
         "token-validity": 3600,
         "redirect-uris": ["https://*.cfapps.*.hana.ondemand.com/**"]
-    }
+    },
+    "authorities": ["$XSAPPNAME.cds.Subscriber"]
 }
