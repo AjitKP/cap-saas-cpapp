@@ -8,7 +8,7 @@ _**saasapp**_ brnach conatins the code base for multi tenant application
 ## Steps followed to Make this Single Application to a Multi-Tenant Application
 1. use terminal command: 
     ```
-    cds add multitenancy
+    cds add multitenancy --for production
     ```
     It changes following things:
     - [package.json] adds @sap/cds-mtxs package as dependency
