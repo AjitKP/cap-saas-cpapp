@@ -107,7 +107,7 @@ resources:
         role-template-references:
         - $XSAPPNAME.RiskViewer
       tenant-mode: dedicated
-      xsappname: cpapp-${space}
+      xsappname: cpapp-${org}-${space}
     path: ./xs-security.json
     service: xsuaa
     service-plan: application
