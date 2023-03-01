@@ -30,5 +30,5 @@ mta_archives/
 # .idea
 
 dist/
-resources/
+resources/**
 app/*/package-lock.json
