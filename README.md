@@ -41,9 +41,9 @@ _**saasapp**_ brnach conatins the code base for multi tenant application
 5. Update requires section of server module with approuter api 
     ```
     - name: app-api
-        properties:
-          APP_PROTOCOL: ~{app-protocol}
-          APP_URI: ~{app-uri}
+      properties:
+        APP_PROTOCOL: ~{app-protocol}
+        APP_URI: ~{app-uri}
     ```
 6. install @sap/xsenv package
     ```
